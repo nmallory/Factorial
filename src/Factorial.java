@@ -17,7 +17,7 @@ public class Factorial {
 
 	public static void main(String[] args) {
 		
-		int n;
+		int n = 0;
 
 		// Create scanner
 		Scanner input = new Scanner(System.in);
@@ -26,14 +26,13 @@ public class Factorial {
 		
 		//Prompt user to enter a number
 		System.out.println("Enter an integer from 1 to 10:");
-		n = input.nextInt();
-		
-		System.out.println("The factorial of " + n + " is " + factorial(n));
-		
-		if(n<=0){
-			System.out.println("");
-		}
-		
-		
+			n = input.nextInt();
+			
+		if(n < 0){
+			System.out.println("You entered a negative number. Please input a positive number:");
+		}else{
+			System.out.println("The factorial of " + n + " is " + factorial(n));
+		}	
+	
 	}
 }
