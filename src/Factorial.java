@@ -3,13 +3,12 @@ import java.util.Scanner;
 public class Factorial {
 	
 	//Method for factorials
-	
 	public static int factorial(int n){
-		int factor = 1;
+		long factor = 1;
 		for(int i =1; i<=n; i++){
 			factor = factor * i;
 		}
-		return factor;
+		return (int) factor;
 	}
 
 	public static void main(String[] args) {
